@@ -22,17 +22,3 @@
   --color-primary: var(--primary);
   --color-secundary: var(--secundary);
 }
-
-@keyframes pulse-bg {
-  0%,
-  100% {
-    background-color: theme("colors.blue.500");
-  }
-  50% {
-    background-color: theme("colors.blue.700");
-  }
-}
-
-.pulse-bg {
-  animation: pulse-bg 2s infinite;
-}
