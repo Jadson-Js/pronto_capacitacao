@@ -1,24 +1,22 @@
+import { coursesData } from "./data.js";
 const coursesList = document.getElementById("coursesList");
 const cards = document.querySelectorAll(".category");
 const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementById("closeModalBtn");
-const btnClose = document.getElementById("btnClose");
 
-async function showCourses(categoryId) {
+function showCourses(categoryId) {
   try {
-    const response = await fetch("/courses.json");
-    const content = await response.json();
-    const coursesContent = content[categoryId].courses;
-    console.log(coursesContent);
+    const courseContent = coursesData[categoryId].courses;
+    console.log(courseContent);
 
-    if (!Array.isArray(coursesContent)) {
+    if (!Array.isArray(courseContent)) {
       console.error(
         "Erro: O arquivo JSON não contém uma lista (array) de cursos.",
       );
       return;
     }
 
-    coursesList.innerHTML = coursesContent
+    coursesList.innerHTML = courseContent
       // 1. Dê um nome para cada item do array (ex: 'course')
       .map((course) => {
         // 2. Use as propriedades de 'course' para preencher o HTML
@@ -49,8 +47,8 @@ function handleModal() {
   // Carrega os cursos antes de qualquer coisa
 
   cards.forEach((card, index) => {
-    card.addEventListener("click", async function () {
-      await showCourses(index);
+    card.addEventListener("click", function () {
+      showCourses(index);
 
       modal.classList.remove("hidden");
       modal.classList.add("flex");
