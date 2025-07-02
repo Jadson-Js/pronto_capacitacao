@@ -3,15 +3,22 @@ export const coursesData = [
     category: "Normas Regulamentadoras",
     courses: [
       {
-        id: "nr-10",
+        nr: "nr-10",
         title: "Segurança em Instalações e Serviços com Eletricidade",
         description:
           "Aprenda as melhores práticas para garantir a segurança em trabalhos com eletricidade.",
         whatsappLink:
           "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2010%20%E2%80%94%20Seguran%C3%A7a%20em%20Instala%C3%A7%C3%B5es%20e%20Servi%C3%A7os%20com%20Eletricidade.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
+        shopLink:
+          "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-10-basico-seguranca-em-instalacoes-e-servico-em-eletricidade",
+        headline:
+          "NR 10 - Segurança em Instalações e Serviços com Eletricidade",
+        subHeadline:
+          "Aprenda as melhores práticas para garantir a segurança em trabalhos com eletricidade.",
+        hero_image: "../public/illustration_nr-10.jpg",
       },
       {
-        id: "nr-20",
+        nr: "nr-20",
         title: "Segurança Com Líquidos E Inflamáveis",
         description:
           "Aprenda as melhores práticas para garantir a segurança em trabalhos com líquidos e inflamáveis.",
@@ -19,7 +26,7 @@ export const coursesData = [
           "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2020%20%E2%80%94%20Seguran%C3%A7a%20Com%20L%C3%ADquidos%20E%20Inflam%C3%A1veis.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
       },
       {
-        id: "nr-30",
+        nr: "nr-30",
         title: "Trabalho em Altura",
         description:
           "Aprenda as melhores práticas para garantir a segurança em trabalhos em altura.",

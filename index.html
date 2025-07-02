@@ -11,49 +11,83 @@
 </head>
 
 <body>
-  <header class="fixed bg-secundary w-full z-20 shadow-lg">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#hero" class="text-white text-2xl font-bold">
-        Pronto Capacitação
-      </a>
+  <header class="fixed top-0 left-0 right-0 bg-[#161C2D] w-full z-50 shadow-lg" role="banner">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between" role="navigation" aria-label="Navegação principal">
 
-      <div class="hidden lg:flex items-center gap-6">
-        <a href="#hero" class="text-white hover:text-primary transition-colors duration-300">Início</a>
-        <a href="#problem" class="text-white hover:text-primary transition-colors duration-300">Por que investir</a>
-        <a href="#solution" class="text-white hover:text-primary transition-colors duration-300">Sobre</a>
-        <a href="#courses" class="text-white hover:text-primary transition-colors duration-300">Cursos</a>
-        <a href="#teacher" class="text-white hover:text-primary transition-colors duration-300">Professor</a>
-        <a href="#faq" class="text-white hover:text-primary transition-colors duration-300">FAQ</a>
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#hero" class="text-white text-2xl font-bold inline-block transition-transform hover:scale-105" aria-label="Pronto Capacitação - Ir para início">
+          <img src="./public/logo.png" alt="Pronto Capacitação - Logo da empresa de treinamentos em segurança do trabalho" class="h-12 xl:h-15 w-auto" width="60" height="48">
+        </a>
       </div>
 
-      <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="hidden lg:block bg-primary hover:bg-green-700 text-white px-6 py-2 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20">
-        Falar com especialista
-      </a>
+      <!-- Menu Desktop -->
+      <ul class="hidden lg:flex items-center gap-6 list-none m-0 p-0" role="menubar">
+        <li role="none">
+          <a href="#hero" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem" aria-current="page">Início</a>
+        </li>
+        <li role="none">
+          <a href="#problem" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Por que investir</a>
+        </li>
+        <li role="none">
+          <a href="#solution" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Sobre</a>
+        </li>
+        <li role="none">
+          <a href="#courses" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Cursos</a>
+        </li>
+        <li role="none">
+          <a href="#teacher" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Professor</a>
+        </li>
+        <li role="none">
+          <a href="#faq" class="text-white hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">FAQ</a>
+        </li>
+      </ul>
 
+      <!-- CTA Desktop -->
+      <div class="hidden lg:block">
+        <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-green-700 text-white px-6 py-2 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 focus:outline-none focus:ring-2 focus:ring-green-300 inline-block btn__cta--primary" aria-label="Entrar em contato via WhatsApp com especialista em segurança do trabalho">
+          Falar com especialista
+        </a>
+      </div>
+
+      <!-- Botão Menu Mobile -->
       <div class="lg:hidden">
-        <button id="hamburger-btn" class="text-white focus:outline-none">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="hamburger-btn" class="text-white focus:outline-none  rounded p-1" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu" type="button">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </button>
       </div>
     </nav>
 
-    <div id="mobile-menu" class="lg:hidden bg-secundary/95 backdrop-blur-sm absolute w-full 
-    opacity-0 -translate-y-full pointer-events-none 
-    transition-all duration-300 ease-in-out">
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="lg:hidden bg-[#161C2D] backdrop-blur-sm absolute w-full opacity-0 -translate-y-full pointer-events-none transition-all duration-300 ease-in-out" role="navigation" aria-label="Menu de navegação mobile" aria-hidden="true">
 
-      <div class="flex flex-col items-center gap-6 py-8">
-        <a href="#hero" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">Início</a>
-        <a href="#problem" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">Por que investir</a>
-        <a href="#solution" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">Sobre</a>
-        <a href="#courses" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">Cursos</a>
-        <a href="#teacher" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">Professor</a>
-        <a href="#faq" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300">FAQ</a>
-        <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="mobile-link mt-4 bg-primary hover:bg-green-700 text-white px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase">
-          Falar com especialista
-        </a>
-      </div>
+      <ul class="flex flex-col items-center gap-6 py-8 list-none m-0 p-0" role="menu">
+        <li role="none">
+          <a href="#hero" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Início</a>
+        </li>
+        <li role="none">
+          <a href="#problem" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Por que investir</a>
+        </li>
+        <li role="none">
+          <a href="#solution" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Sobre</a>
+        </li>
+        <li role="none">
+          <a href="#courses" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Cursos</a>
+        </li>
+        <li role="none">
+          <a href="#teacher" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">Professor</a>
+        </li>
+        <li role="none">
+          <a href="#faq" class="mobile-link text-white text-lg font-semibold hover:text-primary transition-colors duration-300 px-2 py-1 rounded focus:outline-none " role="menuitem">FAQ</a>
+        </li>
+        <li role="none">
+          <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="mobile-link mt-4 bg-primary hover:bg-green-700 text-white px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase focus:outline-none focus:ring-2 focus:ring-green-300 inline-block" role="menuitem" aria-label="Entrar em contato via WhatsApp com especialista em segurança do trabalho">
+            Falar com especialista
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
 
@@ -65,233 +99,269 @@
 
   <main>
     <!-- Hero -->
-    <section id="hero" class="bg-gradient-to-br from-secundary via-slate-800 to-primary/30">
+    <section id="hero" class="bg-gradient-to-br from-secundary via-slate-800 to-primary/30" role="banner" aria-labelledby="hero-title">
       <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col lg:flex-row gap-12 justify-center items-center min-h-screen pt-32">
+
+        <!-- Conteúdo Principal -->
         <div class="text-white flex-1 text-center lg:text-start">
-          <h1 id="heroTitle" class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
-            Garanta a <span class="text-primary">Conformidade</span> e a <span class="text-primary">Produtividade</span> da sua Equipe.
-          </h1>
-          <p class="text-lg lg:text-xl text-slate-300 mb-10 leading-relaxed">
+          <header>
+            <h1 id="headline" class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+              Garanta a <span class="text-primary">Conformidade</span> e a <span class="text-primary">Produtividade</span> da sua Equipe.
+            </h1>
+          </header>
+
+          <p id="subheadline" class="text-lg lg:text-xl text-slate-300 mb-10 leading-relaxed">
             Treinamentos completos em todas as NRs essenciais, com certificação reconhecida e ministrados por especialistas do setor. Reduza riscos, evite multas e proteja seu maior ativo: seus funcionários.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center lg:justify-start">
-            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="w-full sm:w-auto text-xl bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20">
+
+          <!-- Call to Action -->
+          <div class="flex flex-col  gap-4 justify-center items-center lg:items-start cta__buttons" role="group" aria-label="Ações principais">
+            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-xl bg-primary hover:bg-green-700 text-white px-9 py-4 rounded-sm font-medium transition-all duration-300 border-1 border-primary cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 focus:outline-none focus:ring-4 focus:ring-green-300 w-full max-w-80 btn__cta--primary" aria-label="Solicitar cotação via WhatsApp para treinamentos de segurança do trabalho">
               Quero uma cotação
+            </a>
+
+            <a href="https://prontocapacitacao.isesmt.com/blog/products" target="_blank" rel="noopener noreferrer" class="flex-1 text-center text-xl border-2 border-white hover:bg-slate-200 text-white px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hidden w-full max-w-80 btn__cta--secundary">
+              Falar com especialista
             </a>
           </div>
 
-          <div class="mt-12">
-            <p class="text-sm text-slate-400 uppercase font-bold tracking-wider">Empresas que confiam na nossa capacitação:</p>
-            <div class="flex justify-center items-center gap-8 mt-4  opacity-60 lg:justify-start">
-              <img src="./public/icon_bb.svg" alt="Logo Cliente 1" class="h-16 rounded-xl">
-              <img src="./public/icon_copi.png" alt="Logo Cliente 2" class="h-16 rounded-xl">
-              <img src="./public/icon_tracbel.svg" alt="Logo Cliente 3" class="w-40 h-16  rounded-xl hidden sm:block">
+          <!-- Social Proof / Clientes -->
+          <aside class="mt-12" aria-labelledby="clients-title">
+            <h2 id="clients-title" class="text-sm text-slate-400 uppercase font-bold tracking-wider">
+              Empresas que confiam na nossa capacitação:
+            </h2>
+
+            <div class="flex justify-center items-center gap-8 mt-4 opacity-60 lg:justify-start" role="img" aria-label="Logos de empresas clientes">
+
+              <figure class="flex-shrink-0">
+                <img src="./public/icon_bb.svg" alt="Banco do Brasil - Cliente Pronto Capacitação" class="h-16 rounded-xl transition-opacity hover:opacity-100" width="64" height="64" loading="lazy">
+              </figure>
+
+              <figure class="flex-shrink-0">
+                <img src="./public/icon_copi.png" alt="Copi - Cliente Pronto Capacitação" class="h-16 rounded-xl transition-opacity hover:opacity-100" width="180" height="64" loading="lazy">
+              </figure>
+
+              <figure class="flex-shrink-0 hidden sm:block">
+                <img src="./public/icon_tracbel.svg" alt="Tracbel - Cliente Pronto Capacitação" class="w-40 h-16 rounded-xl transition-opacity hover:opacity-100" width="160" height="64" loading="lazy">
+              </figure>
             </div>
-          </div>
+          </aside>
         </div>
 
-        <div class="flex-1 h-120 group">
-          <img src="./public/photo_hero.jpg" alt="Trabalhador industrial com equipamento de segurança em ambiente de fábrica" class="w-full h-full object-cover rounded-xl shadow-2xl  group-hover:shadow-primary/20">
+        <!-- Imagem Hero -->
+        <div class="flex-1 h-120 group" role="img" aria-labelledby="hero-image-caption">
+          <figure class="relative w-full h-full">
+            <img id="illustrationHero" src="./public/photo_hero.jpg" alt="Profissional da indústria utilizando equipamentos de proteção individual (EPI)..." class="w-full h-full object-cover rounded-xl shadow-2xl group-hover:shadow-primary/20 transition-shadow duration-300" width="600" height="480" loading="eager" fetchpriority="high">
+
+            <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+
+            <figcaption id="hero-image-caption" class="sr-only">
+              Trabalhador industrial demonstrando uso correto de EPIs em ambiente de fábrica
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <!-- Problem And Approach -->
-    <section id="problem" class="py-16 sm:py-24">
+    <section id="problem" class="py-16 sm:py-24" aria-labelledby="problem-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16 md:mb-20">
+        <header class="text-center mb-16 md:mb-20">
           <p class="text-secundary font-semibold text-sm uppercase tracking-wider mb-4">
             Por que investir?
           </p>
-          <h2 class="text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
+          <h2 id="problem-heading" class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
             Os riscos da não-conformidade<br>
             custam caro para o seu negócio.
           </h2>
-        </div>
+        </header>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" itemscope itemtype="https://schema.org/Article">
             <div class="max-w-60 mx-auto mb-8 flex-1">
-              <img src="./public/illustration_0.svg" alt="Ilustração para alertar sobre os riscos jurídico da não conformidade.">
+              <img src="./public/illustration_0.svg" alt="Ilustração representando riscos jurídicos da não conformidade com Normas Regulamentadoras - balança da justiça e documentos legais" width="240" height="180" loading="lazy">
             </div>
 
-            <h3 class="text-xl font-semibold mb-3 text-white">Segurança Jurídica</h3>
-            <p class="text-slate-300 leading-relaxed">
+            <h3 class="text-xl font-semibold mb-3 text-white" itemprop="headline">Segurança Jurídica</h3>
+            <p class="text-slate-300 leading-relaxed" itemprop="description">
               O descumprimento das Normas Regulamentadoras pode levar a autuações que impactam diretamente o fluxo de caixa.
             </p>
-            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110"></div>
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110" aria-hidden="true"></div>
           </article>
 
-          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
-            <div class="max-w-60  flex-1 text-center  mx-auto mb-8">
-              <img src="./public/illustration_1.svg" alt="Ilustração para alertar sobre os riscos jurídico da não conformidade.">
+          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" itemscope itemtype="https://schema.org/Article">
+            <div class="max-w-60 flex-1 text-center mx-auto mb-8">
+              <img src="./public/illustration_1.svg" alt="Ilustração sobre acidentes de trabalho e afastamentos - trabalhador ferido e custos médicos" width="240" height="180" loading="lazy">
             </div>
 
-            <h3 class="text-xl font-semibold mb-3 text-white">Acidentes e Afastamentos</h3>
-            <p class="text-slate-300 leading-relaxed">
+            <h3 class="text-xl font-semibold mb-3 text-white" itemprop="headline">Acidentes e Afastamentos</h3>
+            <p class="text-slate-300 leading-relaxed" itemprop="description">
               Um único acidente pode paralisar a operação, gerar custos inesperados com tratamentos e processos judiciais, além de abalar a moral da equipe.
             </p>
-            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110"></div>
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110" aria-hidden="true"></div>
           </article>
 
-          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <article class="group bg-secundary rounded-xl p-8 text-white relative overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" itemscope itemtype="https://schema.org/Article">
             <div class="max-w-80 mx-auto md:mt-8 mb-8 flex-1">
-              <img src="./public/illustration_2.svg" alt="Ilustração para alertar sobre os riscos jurídico da não conformidade.">
+              <img src="./public/illustration_2.svg" alt="Ilustração sobre perda de produtividade - gráfico em declínio e baixa eficiência no trabalho" width="320" height="180" loading="lazy">
             </div>
 
-            <h3 class="text-xl font-semibold mb-3 text-white">Perda de Produtividade</h3>
-            <p class="text-slate-300 leading-relaxed">
+            <h3 class="text-xl font-semibold mb-3 text-white" itemprop="headline">Perda de Produtividade</h3>
+            <p class="text-slate-300 leading-relaxed" itemprop="description">
               Equipes sem treinamento adequado trabalham com insegurança, o que leva a uma menor eficiência e qualidade na entrega.
             </p>
-            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110"></div>
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 w-40 h-40 bg-indigo-500 rounded-full opacity-10 blur-3xl transition-all duration-500 group-hover:opacity-20 group-hover:scale-110" aria-hidden="true"></div>
           </article>
         </div>
       </div>
+
+
     </section>
 
     <!-- Solution -->
-    <section id="solution" class="bg-secundary py-16 sm:py-24">
+    <section id="solution" class="bg-secundary py-16 sm:py-24" aria-labelledby="solution-heading">
       <div class="max-w-7xl mx-auto px-6">
         <!-- Header -->
-        <div class="text-center mb-16 md:mb-20">
+        <header class="text-center mb-16 md:mb-20">
           <p class="text-blue-200 font-semibold text-sm uppercase tracking-wider mb-4">
             Por que nós?
           </p>
-          <h2 class="text-white text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
+          <h2 id="solution-heading" class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight">
             Treinamento Estratégico para uma Operação Segura e Eficiente.
           </h2>
-        </div>
+        </header>
 
         <!-- Benefits Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           <!-- Benefit 1: Garanta 100% de Conformidade -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                <img src="./public/icon_check.svg" alt="Certificado de conformidade">
+                <img src="./public/icon_check.svg" alt="Ícone de conformidade - marca de verificação representando certificação e aprovação em auditorias" width="24" height="24" loading="lazy">
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Garanta 100% de Conformidade
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 Nossos cursos são constantemente atualizados com as últimas revisões das NRs para garantir sua aprovação em qualquer auditoria.
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- Benefit 2: Reduza o Risco -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                <img src="./public/icon_shield.svg" alt="Escudo de segurança">
+                <img src="./public/icon_shield.svg" alt="Ícone de proteção - escudo representando segurança e redução de riscos no trabalho" width="24" height="24" loading="lazy">
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Reduza o Risco
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 Capacite sua equipe com habilidades práticas que previnem incidentes no dia a dia, protegendo vidas e o patrimônio da sua empresa.
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- Benefit 3: Aumente a Produtividade -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                <img src="./public/icon_graph.svg" alt="Grafico de produtividade">
+                <img src="./public/icon_graph.svg" alt="Ícone de crescimento - gráfico ascendente representando aumento de produtividade e eficiência" width="24" height="24" loading="lazy">
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Aumente a Produtividade
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 Equipes bem treinadas e seguras trabalham com mais confiança e eficiência, otimizando seus processos produtivos.
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- Benefit 4: Gestão Unificada e Inteligente -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                <img src="./public/icon_dashboard.svg" alt="Dashboard de gestão">
+                <img src="./public/icon_dashboard.svg" alt="Ícone de gestão - dashboard representando controle unificado e inteligente de processos" width="24" height="24" loading="lazy">
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Gestão Unificada e Inteligente
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 Forneça aos seus colaboradores certificados válidos e reconhecidos, valorizando sua equipe e sua empresa.
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- Benefit 5: Retorno Rápido e Visível -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center">
                 <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                  <img src="./public/icon_cash.svg" alt="Ilustração de retorno rápido">
+                  <img src="./public/icon_cash.svg" alt="Ícone de retorno financeiro - dinheiro representando ROI rápido e economia de custos" width="24" height="24" loading="lazy">
                 </div>
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Retorno Rápido e Visível
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 O cumprimento rigoroso das NRs blinda sua empresa contra pesadas multas, embargos, interdições e os custos indiretos de um acidente.
               </p>
             </div>
-          </div>
+          </article>
 
           <!-- Benefit 6: Especialistas ao seu -->
-          <div class="flex items-start space-x-4">
+          <article class="flex items-start space-x-4" itemscope itemtype="https://schema.org/Service">
             <div class="flex-shrink-0 mt-1">
               <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center">
                 <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center p-1">
-                  <img src="./public/icon_user.svg" alt="Ilustração de especialistas">
+                  <img src="./public/icon_user.svg" alt="Ícone de especialista - pessoa representando profissionais qualificados e suporte especializado" width="24" height="24" loading="lazy">
                 </div>
               </div>
             </div>
             <div>
-              <h3 class="text-xl font-semibold text-white mb-3">
+              <h3 class="text-xl font-semibold text-white mb-3" itemprop="name">
                 Especialistas ao seu
               </h3>
-              <p class="text-blue-100 leading-relaxed">
+              <p class="text-blue-100 leading-relaxed" itemprop="description">
                 Equipes bem treinadas e seguras trabalham com mais confiança e eficiência, otimizando seus processos produtivos.
               </p>
             </div>
-          </div>
+          </article>
 
         </div>
 
-        <div class="h-0.5 w-50 bg-slate-300 rounded-full mx-auto mt-20"></div>
+        <div class="h-0.5 w-50 bg-slate-300 rounded-full mx-auto mt-20" aria-hidden="true"></div>
       </div>
     </section>
 
     <!-- Courses -->
-    <section id="courses" class="py-16 sm:py-24">
+    <section id="courses" class="py-16 sm:py-24" aria-labelledby="courses-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16 md:mb-20">
           <p class="text-secundary font-semibold text-sm uppercase tracking-wider mb-4">
             Grade de cursos
           </p>
-          <h2 class="text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
+          <h2 id="courses-heading" class="text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
             Nossos Cursos de Segurança do Trabalho.
           </h2>
         </div>
 
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2  lg:mx-0 lg:max-w-none  lg:gap-4">
 
-          <div id="category0" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer">
+
+          <div id="category0" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer" role="button" tabindex="0" aria-label="Ver cursos de Normas Regulamentadoras">
             <div>
               <h3 class="text-xl font-semibold leading-8  transition-colors duration-300 group-hover:text-white">
                 Normas Regulamentadoras
@@ -302,13 +372,14 @@
             </div>
 
             <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
           </div>
 
-          <div id="category1" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer">
+
+          <div id="category1" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer" role="button" tabindex="0" aria-label="Ver cursos de Qualificação Profissional">
             <div>
               <h3 class="text-xl font-semibold leading-8  transition-colors duration-300 group-hover:text-white">
                 Qualificação Profissional
@@ -319,13 +390,14 @@
             </div>
 
             <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
           </div>
 
-          <div id="category2" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer">
+
+          <div id="category2" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer" role="button" tabindex="0" aria-label="Ver cursos de Saúde">
             <div>
               <h3 class="text-xl font-semibold leading-8  transition-colors duration-300 group-hover:text-white">
                 Saúde
@@ -336,13 +408,14 @@
             </div>
 
             <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
           </div>
 
-          <div id="category3" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer">
+
+          <div id="category3" class="category group rounded-xl bg-slate-100 p-8 flex items-center justify-between transition-colors duration-300 hover:bg-secundary cursor-pointer" role="button" tabindex="0" aria-label="Ver cursos de Movimentação de Cargas e Materiais">
             <div>
               <h3 class="text-xl font-semibold leading-8  transition-colors duration-300 group-hover:text-white">
                 Movimentação de Cargas e Materiais
@@ -353,7 +426,7 @@
             </div>
 
             <div class="flex h-12 w-12 items-center justify-center rounded-full bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-6 w-6 text-slate-700" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </div>
@@ -364,12 +437,14 @@
       </div>
     </section>
 
-    <!-- Course-->
-    <section id="modal" class="fixed inset-0 z-50  items-center justify-center bg-black/80 bg-opacity-60 hidden ">
-      <div class="flex w-full max-w-7xl mx-4 overflow-hidden bg-white rounded-xl shadow-2xl">
-        <div class="relative hidden w-1/2 md:block">
+    <!-- Modal-->
+    <section id="modal" class="fixed inset-0 z-50 items-center justify-center bg-black/80 bg-opacity-60 hidden" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
 
-          <div class="absolute inset-0 bg-secundary object-cover bg-[url('/public/bg_modal.jpg')]"></div>
+      <div class="flex w-full max-w-7xl mx-4 overflow-hidden bg-white rounded-xl shadow-2xl">
+
+        <div class="relative hidden w-1/2 md:block">
+          <div class="absolute inset-0 bg-secundary object-cover bg-[url('/public/bg_modal.jpg')]" role="img" aria-label="Profissionais da área de segurança do trabalho em uma reunião de planejamento.">
+          </div>
 
           <div class="absolute inset-0 flex items-center justify-center p-12">
             <h2 class="text-5xl font-bold text-center text-white">
@@ -379,19 +454,20 @@
         </div>
 
         <div class="relative w-full p-8 md:w-1/2">
-          <button id="closeModalBtn" class="absolute text-3xl text-gray-500 top-4 right-6 hover:text-gray-800 cursor-pointer">&times;</button>
+          <button id="closeModalBtn" class="absolute text-3xl text-gray-500 top-4 right-6 hover:text-gray-800 cursor-pointer" aria-label="Fechar modal">&times;</button>
 
-          <h3 class="mb-6 text-2xl font-bold text-gray-800">Saude Do Trabalho</h3>
+          <h3 id="modal-heading" class=" mb-6 text-2xl font-bold text-gray-800"></h3>
 
-          <ul id="coursesList"></ul>
+          <ul id="coursesList">
+          </ul>
 
-          <div class="flex pt-8 space-x-4">
-            <a href="https://prontocapacitacao.isesmt.com/blog/products" target="_blank" class="flex-1 mobile-link mt-4 border-1 border-slate-800 hover:bg-slate-200 text-slate-800 px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase text-center">
-              Ver todos os cursos
+          <div class="flex flex-col pt-8 gap-4 sm:flex-row">
+            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="mobile-link border-2 border-primary bg-primary hover:bg-green-700 text-white px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase flex-1 text-center sm:order-1 btn__cta--primary">
+              Falar com especialista
             </a>
 
-            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="mobile-link mt-4 bg-primary hover:bg-green-700 text-white px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase flex-1 text-center">
-              Falar com especialista
+            <a href="https://prontocapacitacao.isesmt.com/blog/products" target="_blank" rel="noopener noreferrer" class="flex-1 mobile-link  border-1 border-slate-800 hover:bg-slate-200 text-slate-800 px-8 py-3 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase text-center sm:order-0">
+              Ver todos os cursos
             </a>
           </div>
         </div>
@@ -399,35 +475,31 @@
     </section>
 
     <!-- Teacher -->
-    <section id="teacher" class="bg-secundary py-16 sm:py-24">
+    <section id="teacher" class="bg-secundary py-16 sm:py-24" aria-labelledby="teacher-heading">
       <div class="max-w-7xl mx-auto px-6">
-        <!-- Header -->
         <div class="text-center mb-16 md:mb-20">
           <p class="text-blue-200 font-semibold text-sm uppercase tracking-wider mb-4">
-            Corpo doscente
-          </p>
-          <h2 class="text-white text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
+            Corpo Docente </p>
+          <h2 id="teacher-heading" class="text-white text-4xl md:text-5xl font-bold  leading-tight tracking-tight">
             Aprenda Com Quem Realmente Entende do Assunto.
           </h2>
         </div>
 
-        <article class="mt-16 flex flex-col items-center gap-12 sm:grid sm:grid-cols-3 sm:items-center lg:gap-16">
+        <article class="mt-16 flex flex-col items-center gap-12 sm:grid sm:grid-cols-3 sm:items-center lg:gap-16" aria-labelledby="instructor-name">
 
           <div class="order-1 sm:order-2 flex justify-center h-100  shadow-xl">
-            <img class="w-full h-full object-cover object-top rounded-xl" src="./public/teacher.jpeg" alt="Professor auxiliando aluno em um notebook.">
+            <img class="w-full h-full object-cover object-top rounded-xl" src="./public/teacher.jpeg" alt="Professor Marcus, especialista em segurança do trabalho, auxiliando um aluno." loading="lazy" width="384" height="576">
           </div>
 
           <div class="order-3 sm:order-1 flex flex-col text-center sm:text-left ">
 
-            <h3 class="text-4xl font-bold text-white mb-4">Marcus</h3>
+            <h3 id="instructor-name" class="text-4xl font-bold text-white mb-4">Marcus</h3>
 
             <p class=" text-lg leading-7 text-slate-300 sm:mb-8">
               Especialista em segurança do Trabalho
             </p>
 
-
-            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="w-full sm:w-fit text-lg bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer 
-              shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 hidden sm:block">
+            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="w-full sm:w-fit text-lg bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 hidden sm:block">
               Falar com especialista
             </a>
           </div>
@@ -436,83 +508,88 @@
             <div>
               <h4 class="text-xl font-semibold leading-7 text-white">16 Anos No Mercado</h4>
               <p class="mt-1 text-base leading-7 text-slate-300">
-                Customers visit Albino every month to get their service done.
+                Experiência comprovada na qualificação de profissionais para o mercado.
               </p>
             </div>
             <div>
               <h4 class="text-xl font-semibold leading-7 text-white">+200 Alunos Empregados</h4>
               <p class="mt-1 text-base leading-7 text-slate-300">
-                Satisfaction rate comes from our awesome customers.
+                Alta taxa de satisfação e empregabilidade entre nossos ex-alunos.
               </p>
             </div>
             <div>
-              <h4 class="text-xl font-semibold leading-7 text-white">Suporte direto ao aluno</h4>
+              <h4 class="text-xl font-semibold leading-7 text-white">Suporte Direto ao Aluno</h4>
               <p class="mt-1 text-base leading-7 text-slate-300">
-                Average customer ratings we have got all over internet.
+                Acompanhamento próximo para garantir o melhor aprendizado.
               </p>
             </div>
 
-            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="w-full sm:w-fit text-lg bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer 
-              shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20  sm:hidden">
+            <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="w-full sm:w-fit text-lg bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20  sm:hidden">
               Falar com especialista
             </a>
           </div>
         </article>
 
-        <div class="h-0.5 w-50 bg-slate-300 rounded-full mx-auto mt-20"></div>
+        <div class="h-0.5 w-50 bg-slate-300 rounded-full mx-auto mt-20" role="separator"></div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-16 sm:py-24">
+    <section class="py-16 sm:py-24" aria-labelledby="testimonials-heading">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16 md:mb-20">
           <p class="text-secundary font-semibold text-sm uppercase tracking-wider mb-4">
             Depoimentos
           </p>
-          <h2 class="text-4xl md:text-5xl font-bold  leading-tight tracking-tight capitalize">
+          <h2 id="testimonials-heading" class="text-4xl md:text-5xl font-bold leading-tight tracking-tight capitalize">
             O que nossos alunos dizem.
           </h2>
         </div>
 
         <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" role="article" aria-labelledby="student-name-1">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto de Isaac Olson">
+                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto do aluno João Silva" loading="lazy" width="48" height="48">
               </div>
               <div class="ml-4">
-                <div class="text-lg font-bold text-gray-900">Isaac Olson</div>
-                <div class="text-base text-gray-600">Frentista - Shell</div>
+                <div id="student-name-1" class="text-lg font-bold text-gray-900">João Silva</div>
+                <div class="text-base text-gray-600">Eletricista - Alumar</div>
               </div>
             </div>
-            <p class="mt-4 text-gray-600">"OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish."</p>
+            <blockquote class="mt-4 text-gray-600 italic">
+              <p>"O curso de NR-10 foi um divisor de águas na minha carreira. A didática do professor Marcus e o suporte da Pronto Capacitação foram essenciais para minha recolocação no mercado."</p>
+            </blockquote>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" role="article" aria-labelledby="student-name-2">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto de Isaac Olson">
+                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto da aluna Maria Oliveira" loading="lazy" width="48" height="48">
               </div>
               <div class="ml-4">
-                <div class="text-lg font-bold text-gray-900">Isaac Olson</div>
-                <div class="text-base text-gray-600">Técnico Em Mecânica - Vale</div>
+                <div id="student-name-2" class="text-lg font-bold text-gray-900">Maria Oliveira</div>
+                <div class="text-base text-gray-600">Técnica em Segurança - Vale</div>
               </div>
             </div>
-            <p class="mt-4 text-gray-600">"OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish."</p>
+            <blockquote class="mt-4 text-gray-600 italic">
+              <p>"Plataforma fácil de usar e conteúdo muito completo. Consegui aplicar o conhecimento do curso de CIPA no dia a dia da empresa e ver resultados práticos. Recomendo!"</p>
+            </blockquote>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2">
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 group transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2" role="article" aria-labelledby="student-name-3">
             <div class="flex items-center">
               <div class="flex-shrink-0">
-                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto de Isaac Olson">
+                <img class="h-12 w-12 rounded-full object-cover" src="./public/testimonials_0.jpg" alt="Foto do aluno Carlos Pereira" loading="lazy" width="48" height="48">
               </div>
               <div class="ml-4">
-                <div class="text-lg font-bold text-gray-900">Isaac Olson</div>
-                <div class="text-base text-gray-600">Técnico Em Mecânica - Vale</div>
+                <div id="student-name-3" class="text-lg font-bold text-gray-900">Carlos Pereira</div>
+                <div class="text-base text-gray-600">Operador de Empilhadeira</div>
               </div>
             </div>
-            <p class="mt-4 text-gray-600">"OMG! I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish."</p>
+            <blockquote class="mt-4 text-gray-600 italic">
+              <p>"Depois da qualificação em Movimentação de Cargas, me senti muito mais seguro e confiante. Agradeço a toda a equipe pelo excelente treinamento e atenção."</p>
+            </blockquote>
           </div>
 
         </div>
@@ -520,26 +597,26 @@
     </section>
 
     <!-- CTA -->
-    <section class="min-h-screen py-16 sm:py-24 bg-secundary flex flex-col justify-center items-center bg-[url('/public/bg_cta.jpg')] bg-cover">
+    <section class="min-h-screen py-16 sm:py-24 bg-secundary flex flex-col justify-center items-center bg-[url('/public/bg_cta.jpg')] bg-cover bg-no-repeat bg-right" aria-labelledby="cta-heading">
+
       <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 id="cta-heading" class="text-white text-3xl font-bold max-w-5xl mb-12 leading-tight md:text-5xl">
+          Pronto para Proteger sua Equipe e Negócio? Solicite uma Proposta Personalizada Agora.
+        </h2>
 
-        <h2 class="text-white text-3xl font-bold max-w-5xl mb-12 leading-tight md:text-5xl">Pronto para Proteger sua Equipe e Negócio? Solicite uma Proposta Personalizada Agora.</h2>
-
-        <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" class="w-fit text-xl bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 md:text-2xl">
+        <a href="https://wa.me/559892211410?text=Ol%C3%A1!%20Encontrei%20o%20site%20da%20Pronto%20Capacita%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20treinamento%20de%20Seguran%C3%A7a%20do%20Trabalho.%20Aguardo%20contato." target="_blank" rel="noopener noreferrer" class="w-fit text-xl bg-primary hover:bg-green-700 text-white px-8 py-4 rounded-sm font-medium transition-all duration-300 cursor-pointer shadow-lg uppercase hover:scale-105 hover:shadow-green-500/20 md:text-2xl btn__cta--primary">
           Quero uma cotação
         </a>
-      </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="min-h-150 py-16 sm:py-24">
+    <section id="faq" class="py-16 sm:py-24" aria-labelledby="faq-heading">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 items-start">
-
           <div class="text-left">
-            <h2 class="text-4xl md:text-5xl font-bold  leading-tight tracking-tight capitalize">
-              Perguntas frequentes
+            <h2 id="faq-heading" class="text-4xl md:text-5xl font-bold leading-tight tracking-tight capitalize">
+              Perguntas Frequentes
             </h2>
             <p class="mt-6 text-xl text-slate-600">
               Nós garantimos que todos os nossos treinamentos estão 100% atualizados e em conformidade com as Normas Regulamentadoras vigentes.
@@ -553,20 +630,19 @@
           </div>
 
           <div class="mt-10 lg:mt-0">
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-secundary">
+            <div class="bg-white rounded-xl shadow-lg border-t-4 border-secundary" itemscope itemtype="https://schema.org/FAQPage">
               <div class="divide-y-2 divide-gray-200" id="faq-accordion">
 
-                <!-- Item FAQ 1 -->
-                <div class="faq-item group rounded-tl-xl rounded-tr-xl bg-white shadow-sm transition-all duration-300">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>Como é a forma de pagamento?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300  rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group rounded-tl-xl rounded-tr-xl bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-1" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-1">
+                    <span itemprop="name">Como é a forma de pagamento?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-1" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
                         <p>Aceitamos diversas formas de pagamento para sua conveniência:</p>
                         <ul class="mt-2 list-inside list-disc space-y-1">
                           <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
@@ -578,116 +654,88 @@
                   </div>
                 </div>
 
-                <!-- Item FAQ 2 -->
-                <div class="faq-item group bg-white shadow-sm transition-all duration-300">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>Os certificados tem validade?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-2" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-2">
+                    <span itemprop="name">Os certificados têm validade?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-2" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
-                        <p>Aceitamos diversas formas de pagamento para sua conveniência:</p>
-                        <ul class="mt-2 list-inside list-disc space-y-1">
-                          <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
-                          <li><strong>PIX:</strong> Confirmação instantânea com 5% de desconto.</li>
-                          <li><strong>Boleto Bancário:</strong> Aprovação em até 2 dias úteis.</li>
-                        </ul>
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
+                        <p>Sim, todos os nossos certificados possuem validade em todo o território nacional. A validade específica de cada treinamento (período para reciclagem) varia conforme a Norma Regulamentadora correspondente, e esta informação está claramente indicada no certificado.</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Item FAQ 3 -->
-                <div class="faq-item group bg-white shadow-sm transition-all duration-300 rounded-bl-xl rounded-br-xl">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>Os instrutores possuem proficiência no assunto?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-3" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-3">
+                    <span itemprop="name">Recebo meu certificado na hora?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-3" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
-                        <p>Aceitamos diversas formas de pagamento para sua conveniência:</p>
-                        <ul class="mt-2 list-inside list-disc space-y-1">
-                          <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
-                          <li><strong>PIX:</strong> Confirmação instantânea com 5% de desconto.</li>
-                          <li><strong>Boleto Bancário:</strong> Aprovação em até 2 dias úteis.</li>
-                        </ul>
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
+                        <p>Sim! Assim que você conclui todas as aulas e é aprovado na avaliação final, seu certificado em PDF é gerado e liberado automaticamente na plataforma, pronto para download.</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Item FAQ 4 -->
-                <div class="faq-item group bg-white shadow-sm transition-all duration-300 rounded-bl-xl rounded-br-xl">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>Recebo meu Certificado na hora?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-3" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-3">
+                    <span itemprop="name">Os instrutores possuem proficiência no assunto?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-3" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
-                        <p>Aceitamos diversas formas de pagamento para sua conveniência:</p>
-                        <ul class="mt-2 list-inside list-disc space-y-1">
-                          <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
-                          <li><strong>PIX:</strong> Confirmação instantânea com 5% de desconto.</li>
-                          <li><strong>Boleto Bancário:</strong> Aprovação em até 2 dias úteis.</li>
-                        </ul>
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
+                        <p>Sim. Todos os nossos instrutores são profissionais experientes, com sólida formação acadêmica e prática na área em que ministram as aulas. Além disso, passam por rigorosos processos seletivos e atualizações constantes para garantir o mais alto nível de qualidade e domínio do conteúdo. Você estará aprendendo com quem realmente entende do assunto.</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Item FAQ 5 -->
-                <div class="faq-item group bg-white shadow-sm transition-all duration-300 rounded-bl-xl rounded-br-xl">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>Recebo meu Certificado na hora?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-3" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-3">
+                    <span itemprop="name">O certificado é reconhecido pelo MTE e MEC?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-3" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
-                        <p>O certificado é reconhecido pelo MTE e MEC? </p>
-                        <ul class="mt-2 list-inside list-disc space-y-1">
-                          <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
-                          <li><strong>PIX:</strong> Confirmação instantânea com 5% de desconto.</li>
-                          <li><strong>Boleto Bancário:</strong> Aprovação em até 2 dias úteis.</li>
-                        </ul>
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
+                        <p>
+                          Não. Nossos certificados são válidos como comprovante de capacitação, mas não têm reconhecimento direto pelo MEC ou pelo MTE. O MEC só reconhece cursos técnicos e superiores regulamentados, e o MTE não “homologa” certificados — ele exige apenas que o trabalhador esteja treinado conforme a NR aplicável. Nossos cursos atendem às normas vigentes e cumprem os requisitos legais para capacitação profissional.</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- Item FAQ 6 -->
-                <div class="faq-item group bg-white shadow-sm transition-all duration-300 rounded-bl-xl rounded-br-xl">
-                  <button class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800">
-                    <span>O certificado tem a mesma mesma validade do presencial?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <div class="faq-item group bg-white shadow-sm transition-all duration-300" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <button id="faq-header-3" class="faq-header flex w-full cursor-pointer items-center justify-between p-5 text-left text-lg font-semibold text-gray-800" aria-expanded="false" aria-controls="faq-body-3">
+                    <span itemprop="name">O certificado tem a mesma mesma validade do presencial?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 rotate-270 group-[.active]:rotate-360" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                     </svg>
                   </button>
-                  <div class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]">
+                  <div id="faq-body-3" class="faq-body grid grid-rows-[0fr] transition-all duration-500 ease-in-out group-[.active]:grid-rows-[1fr]" role="region" aria-labelledby="faq-header-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                     <div class="overflow-hidden">
-                      <div class="px-5 pb-5 text-gray-600">
-                        <p>O certificado é reconhecido pelo MTE e MEC? </p>
-                        <ul class="mt-2 list-inside list-disc space-y-1">
-                          <li><strong>Cartão de Crédito:</strong> Visa, Mastercard e Elo em até 12x.</li>
-                          <li><strong>PIX:</strong> Confirmação instantânea com 5% de desconto.</li>
-                          <li><strong>Boleto Bancário:</strong> Aprovação em até 2 dias úteis.</li>
-                        </ul>
+                      <div class="px-5 pb-5 text-gray-600" itemprop="text">
+                        <p>
+                          Sim. O certificado do curso online tem a mesma validade do presencial, desde que atenda aos requisitos da NR (carga horária, conteúdo programático e instrutor habilitado). O que importa para a lei é a capacitação comprovada, não o formato do curso. O empregador precisa apenas garantir que você esteja treinado conforme as normas. Ou seja, online ou presencial, a validade legal é a mesma.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-
 
               </div>
             </div>

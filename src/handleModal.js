@@ -3,11 +3,11 @@ const coursesList = document.getElementById("coursesList");
 const cards = document.querySelectorAll(".category");
 const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementById("closeModalBtn");
+const modalTitle = document.getElementById("modal-heading");
 
-function showCourses(categoryId) {
+function showCourses(categoryIndex) {
   try {
-    const courseContent = coursesData[categoryId].courses;
-    console.log(courseContent);
+    const courseContent = coursesData[categoryIndex].courses;
 
     if (!Array.isArray(courseContent)) {
       console.error(
@@ -15,11 +15,10 @@ function showCourses(categoryId) {
       );
       return;
     }
+    modalTitle.textContent = coursesData[categoryIndex].category;
 
     coursesList.innerHTML = courseContent
-      // 1. Dê um nome para cada item do array (ex: 'course')
       .map((course) => {
-        // 2. Use as propriedades de 'course' para preencher o HTML
         return `<li>
                   <div class="p-4 transition duration-300 border border-transparent rounded-lg cursor-pointer hover:bg-gray-100 hover:border-gray-200">
                     <a href="${course.whatsappLink}" target="_blank" rel="noopener noreferrer">
