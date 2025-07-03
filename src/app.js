@@ -1,6 +1,7 @@
 import { coursesData } from "./data.js";
 import { loadProblemCards } from "./problemCards.js";
 import { loadSolutionCards } from "./solutionCards.js";
+import { loadCourse } from "./loadCourse.js";
 
 const headlineElement = document.getElementById("headline");
 const subHeadlineElement = document.getElementById("subheadline");
@@ -28,9 +29,9 @@ function loadProductData() {
   const product = findCourseByNr(productId);
 
   if (product) {
-    headlineElement.textContent = product.title;
+    headlineElement.textContent = product.headline;
     subHeadlineElement.textContent = product.subHeadline;
-    illustrationHeroElement.src = product.hero_image;
+    illustrationHeroElement.src = product.heroImage;
     problemHeadingElement.textContent = product.problemHeading;
 
     btnCtaPrimary.forEach((btn) => {
@@ -44,6 +45,7 @@ function loadProductData() {
 
     loadProblemCards(product);
     loadSolutionCards(product);
+    loadCourse(product);
   } else {
     headlineElement.textContent = "Produto Não Encontrado";
   }
