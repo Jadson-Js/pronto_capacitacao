@@ -16,6 +16,8 @@ export const coursesData = [
         subHeadline:
           "Aprenda as melhores práticas para garantir a segurança em trabalhos com eletricidade.",
         hero_image: "../public/illustration_nr-10.jpg",
+        problemHeading:
+          "A Falta do Certificado em NR-10 Coloca sua Carreira em Risco.",
       },
       {
         nr: "nr-20",
