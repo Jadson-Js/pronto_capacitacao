@@ -22,3 +22,8 @@
   --color-primary: var(--primary);
   --color-secundary: var(--secundary);
 }
+
+#courseModulesList {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
