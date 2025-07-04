@@ -164,6 +164,47 @@ export const coursesData = [
         storeLink:
           "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-33-seguranca-em-espaco-confinado-supervisor-de-entrada",
       },
+      // NR - 35
+      {
+        nr: "nr-35",
+        title: "Trabalho em Altura",
+        headline:
+          "A porta de entrada para o mercado: Conquiste sua vaga com o certificado NR-35.",
+        subHeadline:
+          "Eleve sua carreira a um novo patamar. Domine as técnicas de planejamento, segurança e resgate em altura e torne-se um profissional indispensável nos setores que mais crescem no país.",
+        description:
+          "Este curso é essencial para profissionais que realizam atividades em altura, conforme os requisitos da Norma Regulamentadora 35 (NR 35). O treinamento visa capacitar os participantes para identificar riscos, adotar medidas preventivas e executar trabalhos com segurança, protegendo vidas e garantindo a conformidade com as normas de segurança.",
+        ctaHeading:
+          "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
+        workload: "8 horas",
+        heroImage: "../public/illustration_hero_nr-35.jpg",
+        courseImage: "../public/illustration_course_nr-35.png",
+        modules: [
+          "Módulo 1 - Segurança do Trabalho",
+          "Módulo 2 - Objetivo e Campo de Aplicação",
+          "Módulo 3 - Principais Atividades Relacionadas ao Trabalho em Altura",
+          "Módulo 4 - Responsabilidades",
+          "Módulo 5 - Planejamento e Organização",
+          "Módulo 6 - Sistemas de Proteção Contra Quedas",
+          "Módulo 7 - Equipamentos de Proteção Individual Contra Quedas",
+          "Módulo 8 - Sistemas de Proteção Contra Quedas (ponto de ancoragem)",
+          "Módulo 9 - Fator de Queda",
+          "Módulo 10 - Condições Impeditivas para o Trabalho em Altura",
+          "Módulo 11 - Riscos Potenciais",
+          "Módulo 12 - Acidentes, Falhas Humanas, Erros de Procedimentos e Condição Insegura",
+          "Módulo 13 - Sinalização de Segurança",
+          "Módulo 14 - Principais Equipamentos Utilizados para Trabalho em Altura",
+          "Módulo 15 - Equipamentos Adicionais",
+          "Módulo 16 - Inspeções dos Equipamentos Utilizados para Trabalho em Altura",
+          "Módulo 17 - Nós Utilizados nos Trabalhos em Altura",
+          "Módulo 18 - Primeiros Socorros em Trabalhos em Altura",
+          "Avaliação Final",
+        ],
+        whatsappLink:
+          "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2035%20%E2%80%94%20M%C3%A1quinas%20e%20Equipamentos.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
+        storeLink:
+          "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-35-trabalho-em-altura",
+      },
     ],
   },
   {
