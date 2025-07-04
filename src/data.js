@@ -109,6 +109,32 @@ export const coursesData = [
         storeLink:
           "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-10-basico-seguranca-em-instalacoes-e-servico-em-eletricidade",
       },
+      {
+        nr: "nr-12",
+        title: "Máquinas e Equipamentos – Ferramentas Elétricas e Manuais (8h)",
+        headline:
+          "A porta de entrada para o mercado: Conquiste sua vaga com o certificado NR-12.",
+        subHeadline:
+          "Domine os procedimentos de segurança que evitam acidentes graves e garantem a produção. Esteja 100% apto para operar, inspecionar e realizar manutenções seguras em qualquer ambiente industrial.",
+        description:
+          "Capacitação voltada para o uso seguro de ferramentas elétricas portáteis e manuais, conforme a NR 12. O curso aborda riscos, prevenção de acidentes, uso correto de EPIs e procedimentos seguros na operação de furadeiras, serras, esmerilhadeiras e outras ferramentas. Ao final, o participante estará apto a identificar perigos e aplicar práticas seguras no ambiente de trabalho.",
+        ctaHeading:
+          "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
+        workload: "8 horas",
+        heroImage: "../public/illustration_hero_nr-12.jpg",
+        courseImage: "../public/illustration_course_nr-12.png",
+        modules: [
+          "Módulo 01 - Fundamentos",
+          "Módulo 02 - Serra circular e equipamento de corte",
+          "Módulo 03 - Lixadeira e esmerilhadeira",
+          "Módulo 04 - Ferramentas manuais",
+          "Avaliação Final",
+        ],
+        whatsappLink:
+          "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2012%20%E2%80%94%20M%C3%A1quinas%20e%20Equipamentos.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
+        storeLink:
+          "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-12-maquinas-e-equipamentos-ferramentas-eletricas-e-manuais-8h",
+      },
     ],
   },
   {
