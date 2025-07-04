@@ -109,6 +109,7 @@ export const coursesData = [
         storeLink:
           "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-10-basico-seguranca-em-instalacoes-e-servico-em-eletricidade",
       },
+      // NR - 12
       {
         nr: "nr-12",
         title: "Máquinas e Equipamentos – Ferramentas Elétricas e Manuais (8h)",
@@ -134,6 +135,34 @@ export const coursesData = [
           "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2012%20%E2%80%94%20M%C3%A1quinas%20e%20Equipamentos.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
         storeLink:
           "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-12-maquinas-e-equipamentos-ferramentas-eletricas-e-manuais-8h",
+      },
+      // NR - 33
+      {
+        nr: "nr-33",
+        title: "Segurança em Espaço Confinado - Supervisor de Entrada",
+        headline:
+          "A porta de entrada para o mercado: Conquiste sua vaga com o certificado NR-33.",
+        subHeadline:
+          "Prepare-se para atuar com segurança em um dos ambientes mais críticos da indústria. Domine as técnicas de acesso, controle e resgate e torne-se um profissional essencial em qualquer operação em espaços confinados.",
+        description:
+          "Este curso é voltado para capacitar trabalhadores e supervisores que atuam em espaços confinados, abordando as diretrizes da Norma Regulamentadora 33 (NR 33). O treinamento é essencial para garantir a segurança, reduzir riscos e prevenir acidentes em ambientes caracterizados por condições restritas de entrada e ventilação, como tanques, silos, dutos e galerias.",
+        ctaHeading:
+          "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
+        workload: "8 horas",
+        heroImage: "../public/illustration_hero_nr-33.jpg",
+        courseImage: "../public/illustration_course_nr-33.png",
+        modules: [
+          "Módulo 1 - ESPAÇO CONFINADO",
+          "Módulo 2 - PROCEDIMENTOS OBRIGATÓRIOS",
+          "Módulo 3 - ÁREAS CLASSIFICADAS",
+          "Módulo 4 - PPR",
+          "Módulo 5 - NOÇÕES DE RESGATE E PRIMEIROS-SOCORROS",
+          "Avaliação Final",
+        ],
+        whatsappLink:
+          "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR%2033%20%E2%80%94%20M%C3%A1quinas%20e%20Equipamentos.%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
+        storeLink:
+          "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-33-seguranca-em-espaco-confinado-supervisor-de-entrada",
       },
     ],
   },
