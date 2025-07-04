@@ -47,7 +47,7 @@ function loadProductData() {
       btn.href = product.whatsappLink;
     });
 
-    btnCtaFinal.textContent = "GARANTIR MEU CERTIFICADO VÁLIDO";
+    btnCtaFinal.textContent = "GARANTIR MEU CERTIFICADO";
     btnCtaFinal.href = product.storeLink;
 
     loadProblemCards(product);
