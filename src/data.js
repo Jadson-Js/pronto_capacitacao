@@ -15,8 +15,8 @@ export const coursesData = [
         ctaHeading:
           "Invista na segurança e na conformidade. Capacite os membros da sua CIPA e transforme o ambiente de trabalho.",
         workload: "8 horas",
-        heroImage: "../public/illustration_hero_nr-5.jpg",
-        courseImage: "../public/illustration_course_nr-5.png",
+        heroImage: "../public/illustration_hero_nr-5.webp",
+        courseImage: "../public/illustration_course_nr-5.webp",
         modules: [
           "Módulo 1 - Norma Regulamentadora NR 05",
           "Módulo 2 - Legislações Trabalhistas",
@@ -47,8 +47,8 @@ export const coursesData = [
         ctaHeading:
           "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
         workload: "4 horas",
-        heroImage: "../public/illustration_hero_nr-6.jpg",
-        courseImage: "../public/illustration_course_nr-6.png",
+        heroImage: "../public/illustration_hero_nr-6.webp",
+        courseImage: "../public/illustration_course_nr-6.webp",
         modules: [
           "Módulo 1 - Objetivo, conceito e campo de aplicação",
           "Módulo 2 - Disposições gerais e comercialização",
@@ -84,8 +84,8 @@ export const coursesData = [
         ctaHeading:
           "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
         workload: "40 horas",
-        heroImage: "../public/illustration_hero_nr-10.jpg",
-        courseImage: "../public/illustration_course_nr-10.png",
+        heroImage: "../public/illustration_hero_nr-10.webp",
+        courseImage: "../public/illustration_course_nr-10.webp",
         modules: [
           "Módulo 01 - Introdução à segurança com eletricidade",
           "Módulo 02 - Riscos em instalações",
@@ -122,8 +122,8 @@ export const coursesData = [
         ctaHeading:
           "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
         workload: "8 horas",
-        heroImage: "../public/illustration_hero_nr-12.jpg",
-        courseImage: "../public/illustration_course_nr-12.png",
+        heroImage: "../public/illustration_hero_nr-12.webp",
+        courseImage: "../public/illustration_course_nr-12.webp",
         modules: [
           "Módulo 01 - Fundamentos",
           "Módulo 02 - Serra circular e equipamento de corte",
@@ -149,8 +149,8 @@ export const coursesData = [
         ctaHeading:
           "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
         workload: "8 horas",
-        heroImage: "../public/illustration_hero_nr-33.jpg",
-        courseImage: "../public/illustration_course_nr-33.png",
+        heroImage: "../public/illustration_hero_nr-33.webp",
+        courseImage: "../public/illustration_course_nr-33.webp",
         modules: [
           "Módulo 1 - ESPAÇO CONFINADO",
           "Módulo 2 - PROCEDIMENTOS OBRIGATÓRIOS",
@@ -177,8 +177,8 @@ export const coursesData = [
         ctaHeading:
           "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
         workload: "8 horas",
-        heroImage: "../public/illustration_hero_nr-35.jpg",
-        courseImage: "../public/illustration_course_nr-35.png",
+        heroImage: "../public/illustration_hero_nr-35.webp",
+        courseImage: "../public/illustration_course_nr-35.webp",
         modules: [
           "Módulo 1 - Segurança do Trabalho",
           "Módulo 2 - Objetivo e Campo de Aplicação",

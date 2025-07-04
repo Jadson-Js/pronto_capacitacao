@@ -25,6 +25,7 @@ function showCourses(categoryIndex) {
 
     modalTitle.textContent = category.category;
     coursesList.innerHTML = category.courses
+      .slice(0, 3) // Pega somente os 3 primeiros itens da lista
       .map(
         (course) => `
           <li class="flex items-center hover:bg-gray-100 p-2 rounded-lg">
