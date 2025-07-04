@@ -34,7 +34,7 @@ function loadProductData() {
     headlineElement.textContent = product.headline;
     subHeadlineElement.textContent = product.subHeadline;
     illustrationHeroElement.src = product.heroImage;
-    problemHeadingElement.textContent = product.problemHeading;
+    problemHeadingElement.textContent = `A Falta do Certificado em ${product.nr.toUpperCase()} Coloca sua Carreira em Risco.`;
     ctaHeadingElement.textContent = product.ctaHeading;
 
     btnCtaPrimary.forEach((btn) => {
