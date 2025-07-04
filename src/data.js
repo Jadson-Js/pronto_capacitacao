@@ -2,6 +2,7 @@ export const coursesData = [
   {
     category: "Normas Regulamentadoras",
     courses: [
+      // NR - 5
       {
         nr: "nr-5",
         title: "Comissão Interna de Prevenção de Acidentes e de Assédio",
@@ -33,6 +34,44 @@ export const coursesData = [
         storeLink:
           "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-05-cipa-comissao-interna-de-prevencao-de-acidentes-e-de-assedio-grau-de-risco-1-online",
       },
+      // NR - 6
+      {
+        nr: "nr-6",
+        title: "Equipamento de Proteção Individual (EPI)",
+        headline:
+          "A porta de entrada para o mercado: Conquiste sua vaga com o certificado NR-6.",
+        subHeadline:
+          "Vá além do básico. Aprenda a selecionar, inspecionar, conservar e utilizar corretamente os EPIs, tornando-se um profissional indispensável e preparado para qualquer desafio no ambiente de trabalho.",
+        description:
+          "Curso: Equipamento de Proteção Individual (EPI) Este curso é essencial para profissionais que buscam entender a importância, a correta utilização e a gestão dos Equipamentos de Proteção Individual no ambiente de trabalho. Com foco em garantir a saúde e a segurança dos colaboradores, o curso aborda desde as regulamentações e responsabilidades legais até os tipos de EPIs e sua aplicação em diferentes situações.",
+        ctaHeading:
+          "Sua carreira e sua empresa exigem conformidade. Este é o passo final para sua regularização profissional.",
+        workload: "4 horas",
+        heroImage: "../public/illustration_hero_nr-6.jpg",
+        courseImage: "../public/illustration_course_nr-6.png",
+        modules: [
+          "Módulo 1 - Objetivo, conceito e campo de aplicação",
+          "Módulo 2 - Disposições gerais e comercialização",
+          "Módulo 3 - Responsabilidades da organização",
+          "Módulo 4 - Responsabilidades do trabalhador (limpeza, guarda e conservação)",
+          "Módulo 5 - EPI para proteção da cabeça",
+          "Módulo 6 - Óculos de proteção",
+          "Módulo 7 - Protetor auditivo",
+          "Módulo 8 - Proteção respiratória",
+          "Módulo 9 - Proteções corporais e proteção balística",
+          "Módulo 10 - Membros superiores",
+          "Módulo 11 - Membros inferiores",
+          "Módulo 12 - Proteção do corpo inteiro",
+          "Módulo 13 - Cinturão de segurança e talabarte",
+          "Módulo 14 - Equipamentos de proteção coletiva (EPC)",
+          "Avaliação Final",
+        ],
+        whatsappLink:
+          "https://wa.me/559892211410?text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20NR-6%20%E2%80%94%20Equipamento%20de%20Prote%C3%A7%C3%A3o%20Individual%20(EPI).%20Poderia%20me%20enviar%20detalhes%20e%20o%20investimento,%20por%20favor?",
+        storeLink:
+          "https://prontocapacitacao.isesmt.com/blog/productDetails/nr-06-epi",
+      },
+      // NR - 10
       {
         nr: "nr-10",
         title: "Segurança em Instalações e Serviços com Eletricidade",
