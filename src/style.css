@@ -27,3 +27,21 @@
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
+
+/* bg-[url('../public/bg_cta.jpg')] bg-cover bg-no-repeat bg-bottom */
+
+.cta__background {
+  background-image: url("../public/bg_cta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* bg-cover bg-center bg-[url('../public/bg_modal.jpg')]*/
+
+.modal__background {
+  background-image: url("../public/bg_modal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
