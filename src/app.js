@@ -2,12 +2,14 @@ import { coursesData } from "./data.js";
 import { loadProblemCards } from "./problemCards.js";
 import { loadSolutionCards } from "./solutionCards.js";
 import { loadCourse } from "./loadCourse.js";
+import { loadTestimonials } from "./testimonial.js";
 
 const headlineElement = document.getElementById("headline");
 const subHeadlineElement = document.getElementById("subheadline");
 const illustrationHeroElement = document.getElementById("illustrationHero");
 const btnCtaPrimary = document.querySelectorAll(".btn__cta--primary");
 const btnCtaSecundary = document.querySelectorAll(".btn__cta--secundary");
+const btnCtaZap = document.querySelectorAll(".btn__cta--zap");
 const ctaHeadingElement = document.getElementById("cta-heading");
 const btnCtaFinal = document.getElementById("btnCtaFinal");
 
@@ -47,12 +49,17 @@ function loadProductData() {
       btn.href = product.whatsappLink;
     });
 
+    btnCtaZap.forEach((btn) => {
+      btn.href = product.whatsappLink;
+    });
+
     btnCtaFinal.textContent = "GARANTIR MEU CERTIFICADO";
     btnCtaFinal.href = product.storeLink;
 
     loadProblemCards(product);
     loadSolutionCards(product);
     loadCourse(product);
+    loadTestimonials(product);
   } else {
     headlineElement.textContent = "Produto Não Encontrado";
   }

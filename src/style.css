@@ -31,7 +31,7 @@
 /* bg-[url('../public/bg_cta.jpg')] bg-cover bg-no-repeat bg-bottom */
 
 .cta__background {
-  background-image: url("../public/bg_cta.jpg");
+  background-image: url("../public/bg_cta.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -40,7 +40,7 @@
 /* bg-cover bg-center bg-[url('../public/bg_modal.jpg')]*/
 
 .modal__background {
-  background-image: url("../public/bg_modal.jpg");
+  background-image: url("../public/bg_modal.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
