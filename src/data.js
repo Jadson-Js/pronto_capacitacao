@@ -19,19 +19,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-5.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Miguel Pinheiro",
             position: "Técnico em segurança do trabalho",
             text: "O curso de NR-5 foi essencial para eu conseguir estruturar todo o processo eleitoral da CIPA deste ano. O passo a passo da norma, desde a convocação até a apuração, ficou muito claro. A plataforma ajudou a tirar dúvidas pontuais sobre o dimensionamento correto para o nosso quadro de funcionários.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "João Silva",
             position: "Eletricista",
             text: "Fui eleito pra CIPA e, sinceramente, não sabia bem por onde começar. O curso de NR-5 me deu o norte que eu precisava para entender minhas responsabilidades como membro. Agora participo das reuniões e inspeções com muito mais segurança, sabendo o que observar e como contribuir.",
           },
           {
-            image: "../public/testimonial_nr-5_2.png",
+            image: "../public/testimonial_nr-5_2.webp",
             name: "Maria Oliveira",
             position: "Técnica em Segurança",
             text: "Usei o curso de NR-5 para treinar os novos membros da comissão e o resultado foi ótimo. O conteúdo sobre a elaboração do Mapa de Riscos é excelente e foi um guia prático para a equipe. A clareza sobre as atribuições de cada um, conforme a norma, facilitou muito meu trabalho.",
@@ -71,19 +71,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-6.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Fernando Costa",
             position: "Técnica em Segurança",
             text: "Como compradora, eu precisava entender a fundo as exigências da NR-6. O curso foi direto ao ponto, principalmente na parte que explica as responsabilidades do empregador na aquisição dos EPIs. Agora sinto muito mais segurança ao negociar com fornecedores e exigir o Certificado de Aprovação (CA) válido para todos os itens.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "Ricardo Souza",
             position: "Supervisor de Produção",
             text: "Meu maior desafio é garantir que a equipe use o EPI o tempo todo. O treinamento de NR-6 me deu ótimos argumentos para os diálogos de segurança e me ensinou a maneira correta de orientar sobre o uso, guarda e conservação de cada equipamento. Ajudou a aumentar a conscientização de todo o time.",
           },
           {
-            image: "../public/testimonial_nr-5_2.png",
+            image: "../public/testimonial_nr-5_2.webp",
             name: "Fernanda Mendes",
             position: "Responsável pelo Almoxarifado",
             text: "O curso de NR-6 mudou minha forma de gerenciar o estoque de EPIs. Aprendi a forma correta de registrar a entrega para cada funcionário e, principalmente, a importância de controlar a validade do CA. Agora nosso controle está muito mais rigoroso e totalmente alinhado com a fiscalização.",
@@ -128,19 +128,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-10.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Lucas Martins",
             position: "Eletricista de Manutenção",
             text: "Este curso de NR-10 foi um divisor de águas para mim. A parte sobre desenergização e bloqueio (LOTO) foi muito bem explicada. Antes, eu fazia o procedimento de forma mecânica, agora entendo cada passo e o risco envolvido. Sinto que meu trabalho ficou muito mais seguro, tanto para mim quanto para meus colegas.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "André Ferreira",
             position: "Engenheiro Eletricista",
             text: "Como responsável por uma equipe, o módulo sobre Medidas de Controle do Risco Elétrico foi o mais valioso. O curso detalhou a elaboração da Análise de Risco e a emissão da Permissão de Trabalho, ferramentas que implementei imediatamente. Ajudou a padronizar e elevar o nível de segurança em todas as nossas intervenções.",
           },
           {
-            image: "../public/testimonial_nr-5_2.png",
+            image: "../public/testimonial_nr-5_2.webp",
             name: "Juliana Ramos",
             position: "Técnica em Segurança do Trabalho",
             text: "O treinamento de NR-10 me deu a base que eu precisava para auditar e organizar o Prontuário das Instalações Elétricas da empresa. Entender as exigências de documentação, os laudos necessários e os requisitos para a qualificação da equipe fez toda a diferença para garantir que estamos 100% em conformidade com a norma.",
@@ -186,19 +186,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-12.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Bruno Azevedo",
             position: "Engenheiro de Segurança do Trabalho",
             text: "O nosso grande desafio era adequar um parque de máquinas antigo. O curso de NR-12 foi um guia, me dando um roteiro claro de como conduzir a apreciação de risco para cada equipamento, documentar tudo no inventário e criar os procedimentos de trabalho seguro. Foi fundamental para o nosso projeto de adequação.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "Marcos Ribeiro",
             position: "Operador de Máquinas",
             text: "Sinceramente, antes eu via as proteções e sensores só como algo que atrapalhava a produção. O curso de NR-12 me fez entender que cada um daqueles itens existe por um motivo claro: proteger a minha vida. Passei a ter outro olhar para o checklist diário e a importância das paradas de emergência.",
           },
           {
-            image: "public/testimonial_nr-5_2.png",
+            image: "public/testimonial_nr-5_2.webp",
             name: "Flávia Guimarães",
             position: "Técnica em Eletromecânica",
             text: "Para mim, que faço a manutenção, o curso de NR-12 foi excelente. A parte sobre os sistemas de segurança, como os intertravamentos e os relés de segurança, foi muito detalhada. Agora sei exatamente o que verificar para garantir que a proteção da máquina está 100% funcional e segura após uma intervenção.",
@@ -233,19 +233,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-33.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Roberto Barros",
             position: "Supervisor de Manutenção",
             text: "A maior mudança para mim, como Supervisor de Entrada, foi na hora de preencher e assinar a PET. O curso de NR-33 detalhou cada campo da Permissão de Entrada e Trabalho, desde os testes atmosféricos até a definição da equipe de resgate. Hoje, não libero nenhuma entrada sem que todos os itens estejam 100% checados. A responsabilidade é gigante.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "Wagner Reis",
             position: "Mecânico de Manutenção Industrial",
             text: "Eu costumava sentir um calafrio antes de entrar em tanques e galerias. Depois do curso de NR-33, a história é outra. Entender sobre a medição dos gases, a ventilação e saber que tem um Vigia preparado lá fora me dá a confiança que preciso para focar no meu trabalho. A gente aprende a respeitar o procedimento porque ele salva vidas.",
           },
           {
-            image: "../public/testimonial_nr-5_2.png",
+            image: "../public/testimonial_nr-5_2.webp",
             name: "Patrícia Lima",
             position: "Operadora de Produção",
             text: "Eu achava que ser Vigia era só ficar olhando. O treinamento de NR-33 me mostrou a enorme responsabilidade que eu tenho. Aprendi a manter a comunicação constante com a equipe, a monitorar os equipamentos e, o mais importante, a como acionar a equipe de resgate e agir numa emergência. Agora sei que meu papel é fundamental.",
@@ -281,19 +281,19 @@ export const coursesData = [
         courseImage: "../public/illustration_course_nr-35.webp",
         testimonials: [
           {
-            image: "../public/testimonial_nr-5_0.png",
+            image: "../public/testimonial_nr-5_0.webp",
             name: "Mariana Costa",
             position: "Supervisora de Obras",
             text: "Minha maior preocupação sempre foi a liberação do serviço em altura. O treinamento de NR-35 foi fundamental para eu dominar a elaboração da Análise de Risco e da Permissão de Trabalho. O curso ensina a pensar em todos os detalhes, desde o isolamento da área até o plano de resgate, antes mesmo da equipe subir. A responsabilidade é enorme.",
           },
           {
-            image: "../public/testimonial_nr-5_1.png",
+            image: "../public/testimonial_nr-5_1.webp",
             name: "João Victor Almeida",
             position: "Técnico em Segurança do Trabalho",
             text: "Implementar um programa de gestão para trabalho em altura é complexo. O curso de NR-35 foi um excelente guia, principalmente nos módulos sobre a inspeção periódica dos EPIs e os diferentes tipos de pontos de ancoragem. A parte sobre o planejamento de resgate também foi muito esclarecedora e nos ajudou a criar um plano de emergência mais eficaz.",
           },
           {
-            image: "public/testimonial_nr-5_2.png",
+            image: "public/testimonial_nr-5_2.webp",
             name: "Carlos Eduardo Santos",
             position: "Montador de Andaimes",
             text: "Trabalho com montagem há anos, mas o curso de NR-35 abriu meus olhos. A gente aprende a fazer a inspeção do nosso próprio cinto de segurança, talabarte e trava-quedas de um jeito que vira rotina. Entender como uma queda acontece e confiar 100% no equipamento e na ancoragem me deu muito mais segurança para trabalhar.",
